@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Ginto';
+    font-weight: 500;
+    src: url('https://cdn.jsdelivr.net/gh/mahtoid/DiscordUtils@master/Ginto-Nord-500.woff2') format("woff2"), url('https://cdn.jsdelivr.net/gh/mahtoid/DiscordUtils@master/Ginto-Nord-500.woff') format("woff");
+}
+@font-face {
+    font-family: 'Ginto';
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/gh/mahtoid/DiscordUtils@master/Ginto-400.woff) format("woff");
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    font-family: 'Ginto';
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #36393e;
+    box-shadow: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header .hashtag {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 8px;
+}
+.header .summary {
+    display: flex;
+    align-items: center;
+    padding: 0.2em 0.35em;
+    margin-left: auto;
+    margin-right: 50px;
+    color: #b9bbbe;
+    transition: color 0.3s ease;
+}
+.header .summary:hover {
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-family: 'Ginto';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #202225;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 64px);
+    z-index: 1000;
+    padding: 16px;
+    margin: 0 16px 16px;
+    border-radius: 15px;
+}
